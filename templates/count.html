@@ -1,0 +1,15 @@
+<h1>لا حول ولا قوة الا بالله</h1>
+<a href="{% url 'home'%}">take me to home page</a>
+<h1>there are {{ count }} word list</h1><br>
+<h1>You Text: </h1>
+{{ fulltext }}
+
+<h1>word count</h1>
+
+{%for word,count in sotedwords%}
+<br>
+[{{ word }} - {{ count }}]
+<br>
+
+
+{% endfor %}
